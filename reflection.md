@@ -26,6 +26,11 @@ DailyPlan: Store scheduled tasks with assigned times. Track which tasks fit and 
 - Did your design change during implementation?
 - If yes, describe at least one change and why you made it.
 
+Added pet_name: Optional[str] to Task:
+Why: explicit owner/pet task linkage, ready for multi-pet support.
+
+Added tasks: List["Task"] to Pet, plus add_task/remove_task stubs:
+Why: captures direct Pet-to-Task relationship.
 ---
 
 ## 2. Scheduling Logic and Tradeoffs
